@@ -80,7 +80,6 @@ var m = 10;
 
 const givenName = "Malaika"
 
-
 // Naming conventions
 // 	 camelCase    eg firstName
 // 	 PascalCase   eg FirstName

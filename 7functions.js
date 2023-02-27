@@ -38,6 +38,13 @@ return a + b
 
 add(2, 3); // returns 5
 
+const add = (a, b) =>{
+ console.log( a+b)
+ return a + b
+ 
+}
+
+const add = (a, b) => a + b
 
 // Function definition
 function say() {
@@ -73,8 +80,8 @@ console.log(Add(804850485048504, 497694760406404370));
 function multiply(){
     let localVariable1 = 5;
     let localVariable2 = 6;
-    let product =  localVariable1 * localVariable2
-    return product
+    let product =  localVariable1 * localVariable2;
+    return product;
 
 }
 console.log("my product", multiply())
