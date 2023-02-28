@@ -64,5 +64,24 @@ MyObj.pi = 3.1415;
 const MyObj2 = Object.freeze({ foo: "bar", qux: "xyz" });
 MyObj2.qux = "hi";
 MyObj2.foo = "pawpaw"
-MyObj2 = { foo: "Pineapple", qux: "hey there" };
+// MyObj2 = { foo: "Pineapple", qux: "hey there" };
 console.log("Changing the object afer  object freeze", MyObj2);
+
+"use strict"
+num3 = 3.14; 
+"use strict";
+let x = {p1:10, p2:20}; 
+// console.log(delete x.p1);
+// console.log(delete x);
+// console.log(x);
+
+
+// this key word refers to the object person as per the example
+const person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
