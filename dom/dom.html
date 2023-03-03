@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessing elements in the dom with javascript</title>
+    <!-- <link rel="stylesheet" href="dom.css"> -->
     <style>
         html {
             font-family: sans-serif;
@@ -19,38 +20,39 @@
         }
 
         div,
-        article {
+        section {
             padding: 10px;
             margin: 5px;
-            border: 1px solid #dedede;
+            border: 3px dotted blue;
         }
     </style>
 </head>
-
+<!-- id takes precedence over class -->
 <body>
     <h1>Accessing elements in the dom</h1>
     <h2> ID(#DEMO)</h2>
-    <div id="demo">
-        Access me by ID
-    </div>
+    <div id="demo">Access me by ID</div>
 
     <h2>Class(.demo)</h2>
     <div class="demo">Access me by class 1 </div>
     <div class="demo">Access me by class 2 </div>
+    <div class="demo">Access me by class 3 </div>
 
     <h2>Tag Artical</h2>
-    <article>Access me by tag (1)</article>
-    <article>Access me by tag (2)</article>
+    <section>Access me by tag (1)</section>
+    <section>Access me by tag (2)</section>
 
     <h2>Query selector</h2>
     <div id="demo-query">Access me by query</div>
-
+ 
     <h2>Query selector all</h2>
     <div class="demo-query-all">Access me by Query selector (1)</div>
     <div class="demo-query-all">Access me by Query selector (2)</div>
     <br>
+
     <button onclick="changeMe()">Click Me</button>
     <p>Try to change me</p>
+    
     <br>
     <button id="pop">Click Me oops!</button>
     <div id="opp"></div>

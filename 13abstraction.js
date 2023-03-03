@@ -59,7 +59,6 @@ function Employee(name, age, baseSalary){
             console.log("This employee is still in service")
         }
     } 
-    
 
     this.getEmpDetails = function(){
         console.log('Name : '+this.name+' | Age : '+this.age);
