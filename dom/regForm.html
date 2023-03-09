@@ -79,6 +79,24 @@
                             <small id="roleErr"></small>
                         </div>
                     </div>
+                    <!-- Added inputs for calculations -->
+                    <div class="form-row">
+                        <div class="col form-group">
+                            <label>Cost</label>
+                            <input type="number" class="form-control" id="amount" name="cost" oninput="calcTotal();">
+                            <small id="costErr"></small>
+                        </div>
+                        <div class="col form-group">
+                            <label>Quantity of items</label>
+                            <input type="number" class="form-control" id="quantity" name="items" oninput="calcTotal();">
+                            <small id="itemsErr"></small>
+                        </div>
+                        <div class="col form-group">
+                            <label>Total cost</label>
+                            <input type="number" class="form-control" id="total" name="totalcost">
+                            <small id="totalErr"></small>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="col form-group">
                             <button class="btn btn-primary btn-block" id="submit">Register </button>

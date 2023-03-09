@@ -174,4 +174,12 @@ const Validate = () => {
     }
 }
 
-
+// Function to calculate total and auto populate it in Html
+function calcTotal() {
+  let amount = document.getElementById("amount").value;
+      amount = parseInt(amount);
+  let quantity = document.getElementById("quantity").value;
+      quantity = parseInt(quantity);
+  let total = amount * quantity;
+  document.getElementById("total").value = total;
+}
